@@ -4,7 +4,7 @@ function getSum() {
 
   console.log("Summing: " + a + " and " + b);
 
-  $.get("https://${document.domain}/api/sum/?a=" + a + "&b=" + b, function( data ) {
+  $.get("https://$(document.domain)/api/sum/?a=" + a + "&b=" + b, function( data ) {
     $("body")
       .append(" Status: " + data.Status)
 	  .append(" Result: " + data.Result + "<br>")
@@ -18,7 +18,7 @@ function getDiff() {
 
   console.log("Difference between: " + a + " and " + b);
 
-  $.get("https://${document.domain}/api/diff/?a=" + a + "&b=" + b, function( data ) {
+  $.get("https://$(document.domain)/api/diff/?a=" + a + "&b=" + b, function( data ) {
     $("body")
       .append(" Status: " + data.Status)
          .append(" Result: " + data.Result + "<br>")
