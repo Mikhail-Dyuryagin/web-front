@@ -4,7 +4,6 @@ function getSum() {
 
   console.log("Summing: " + a + " and " + b);
 
-
   $.get("https://denergym.devops.srwx.net/api/sum/?a=" + a + "&b=" + b, function( data ) {
     $("body")
       .append(" Status: " + data.Status)
